@@ -30,4 +30,17 @@ export class StudentTableComponent implements OnInit {
       },
     });
   }
+
+  onremovestd(remove : number){
+    this._studentService.removestd(remove)
+    .subscribe({
+      next : (data)=>{
+        this._snackBar.openSnackBar(data.msg)
+      },
+      error: err =>{
+        console.log(err);
+        
+      }
+    })
+  }
 }

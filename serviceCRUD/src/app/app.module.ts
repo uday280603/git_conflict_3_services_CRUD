@@ -7,6 +7,7 @@ import { StudentDashboardComponent } from './shared/component/student-dashboard/
 import { StudentTableComponent } from './shared/component/student-table/student-table.component';
 import { StudentFormComponent } from './shared/component/student-form/student-form.component';
 import { GetConfirmationComponent } from './shared/component/get-confirmation/get-confirmation.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { GetConfirmationComponent } from './shared/component/get-confirmation/ge
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
